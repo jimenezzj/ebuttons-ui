@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* CUSTOM FONTS SET-UP */
+@font-face {
+    font-family: ClMont;
+    src: url("./assets/fonts/Mont/Mont-Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ClMont;
+    src: url("./assets/fonts/Mont/Mont-RegularItalic.otf") format("opentype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ClMont;
+    src: url("./assets/fonts/Mont/Mont-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ClMont;
+    src: url("./assets/fonts/Mont/Mont-BoldItalic.otf") format("opentype");
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ClMont;
+    src: url("./assets/fonts/Mont/Mont-Light.otf") format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: ClMont;
+    src: url("./assets/fonts/Mont/Mont-ThinItalic.otf") format("opentype");
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* CUSTOM FONTS SET-UP */
+
+/* GENERAL STYLES */
+:root {
+    --ff-primary: "ClMont", "Mont", monospace;
+    --ff-secondary: "ClMont", "Mont", monospace;
+
+    --clr-dark: #3d3c3c;
+    --clr-light: #fff;
+    --clr-primary: #1868c3;
+    --clr-secondary: #747474;
+    --clr-tertiary: #00adee;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-primary);
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+h1, h3, h3, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* GENERAL STYLES */
