@@ -1,0 +1,4 @@
+<a *ngIf="btnType === 'link'; else btnLinkEle" [ngClass]="getStylesArr(clsLink)" #clsLink>{{innerText}}</a>
+<ng-template #btnLinkEle>
+    <button [ngClass]="getStylesArr(clsBtn)" #clsBtn>{{innerText}}</button>
+</ng-template>

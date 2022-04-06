@@ -2,4 +2,25 @@
 <h2>This is the Clicklease Ebuttons Plugin but it's built with Angular</h2>
 <h3>This is the Clicklease Ebuttons Plugin but it's built with Angular</h3>
 <h4>This is the Clicklease Ebuttons Plugin but it's built with Angular</h4>
-<app-card></app-card>
+<app-card [cardStyle]="'light'"></app-card>
+<div class="common-btns">
+  <cls-button [innerText]="'Apply Now'" [events]="{'click': doSomething}"></cls-button>
+  <cls-button [innerText]="'Apply Now'" [styleOpts]="{ theme: 'sec'}" [events]="{'mouseenter': doSomething2}">
+  </cls-button>
+  <cls-button [innerText]="'Apply Now'" [styleOpts]="{ theme: 'ter', isOutline: false}"></cls-button>
+</div>
+<div class="outlined-btns" [ngStyle]="{padding: '1rem 0'}">
+  <cls-button [btnType]="'button'" [innerText]="'Apply Now'" [styleOpts]="{isOutline: true}"
+    [events]="{'click': doSomething}"></cls-button>
+  <cls-button [btnType]="'button'" [innerText]="'Apply Now'" [styleOpts]="{ theme: 'sec', isOutline: true}"
+    [events]="{'mouseenter': doSomething2}"></cls-button>
+  <cls-button [btnType]="'button'" [innerText]="'Apply Now'" [styleOpts]="{ theme: 'ter', isOutline: true}">
+  </cls-button>
+</div>
+<div class="common-btns links">
+  <cls-button [btnType]="'link'" [innerText]="'Apply Now'" [events]="{'click': doSomething}"></cls-button>
+  <cls-button [btnType]="'link'" [innerText]="'Apply Now'" [styleOpts]="{ theme: 'sec'}"
+    [events]="{'mouseenter': doSomething2}">
+  </cls-button>
+  <cls-button [btnType]="'link'" [innerText]="'Apply Now'" [styleOpts]="{ theme: 'ter', isOutline: false}"></cls-button>
+</div>
