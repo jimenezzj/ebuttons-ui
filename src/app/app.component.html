@@ -2,7 +2,15 @@
 <h2>This is the Clicklease Ebuttons Plugin but it's built with Angular</h2>
 <h3>This is the Clicklease Ebuttons Plugin but it's built with Angular</h3>
 <h4>This is the Clicklease Ebuttons Plugin but it's built with Angular</h4>
-<app-card [cardStyle]="'light'"></app-card>
+<div [ngClass]="['cards-showcase']" [ngStyle]="{padding: '1rem'}">
+  <app-card [cardStyle]="'light'">
+    <h4>IM INSIDE A CARD!</h4>
+    <cls-input-field></cls-input-field>
+  </app-card>
+  <app-card [cardStyle]="'gray'">
+    <h3>IM INSIDE A CARD!</h3>
+  </app-card>
+</div>
 <div class="common-btns">
   <cls-button [innerText]="'Apply Now'" [events]="{'click': doSomething}"></cls-button>
   <cls-button [innerText]="'Apply Now'" [styleOpts]="{ theme: 'sec'}" [events]="{'mouseenter': doSomething2}">

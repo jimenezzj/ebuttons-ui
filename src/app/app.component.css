@@ -2,3 +2,8 @@
 .outlined-btns * {
     margin-right: 1rem;
 }
+
+.cards-showcase > * {
+    display: block;
+    margin: 1rem 0;
+}
