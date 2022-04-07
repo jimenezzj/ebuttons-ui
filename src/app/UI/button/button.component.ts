@@ -59,7 +59,7 @@ export class ButtonComponent implements OnInit {
       if (this.btnType === 'link' && !this.styleOpts.isOutline) {
         this.renderer.setAttribute(crrBtnEle, 'tabindex', '0');
       }
-      console.log(cssVarsObj);
+      // console.log(cssVarsObj);
       this.renderer.setAttribute(crrBtnEle, 'style',
         (crrBtnEle.getAttribute('style') || '') + getStyleAttrWithCssVars(cssVarsObj));
       // console.log(this.btnEle);

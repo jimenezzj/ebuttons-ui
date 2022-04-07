@@ -1,2 +1,4 @@
-<input [id]="fldId" [name]="fldId" [type]="fldType" [ngStyle]="{width: '330px'}" [ngClass]="['cls-fld-text']"
-    [value]="inValue">
+<input *ngIf="fldType === 'text' || fldType === 'number'" [id]="fldId" [name]="fldId" [type]="fldType"
+    [ngStyle]="{width: '330px'}" [ngClass]="['cls-fld-text']" [value]="inValue" #fieldWrapp>
+<input *ngIf="fldType === 'email'" [id]="fldId" [name]="fldId" [type]="fldType"
+    [ngStyle]="{width: '330px'}" [ngClass]="['cls-fld-text']" [value]="inValue" #fieldWrapp>
